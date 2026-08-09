@@ -113,15 +113,15 @@ export default function MissionControlHUD() {
                 className="w-full h-44 bg-[#020617] border border-[#1e293b] rounded p-3 text-xs text-[#38bdf8] focus:outline-none focus:border-[#06b6d4] focus:shadow-[0_0_15px_rgba(6,182,212,0.15)] font-mono leading-relaxed transition-all duration-300"
                 value={ingressData}
                 onChange={(e) => setIngressData(e.target.value)}
-              />
+              
             </div>
             
             {/* Primary Action Input Controller with Glowing Micro-Interactions */}
             <button 
               onClick={triggerNeuralInference}
               disabled={isProcessing}
-              className={`w-full text-[#020617] font-bold py-3 px-4 rounded transition-all duration-300 transform active:scale-[0.99] tracking-widest text-xs uppercase ${isProcessing ? 'bg-[#1e293b] text-[#64748b] cursor-not-allowed' : 'bg-gradient-to-r from-[#06b6d4] via-[#38bdf8] to-[#06b6d4] bg-[length:200%_auto] hover:bg-right shadow-[0_0_15px_rgba(6,182,212,0.25)] hover:shadow-[0_0_25px_rgba(6,182,212,0.45)]'}`}
-            >
+              className={`w-full text-[#020617] font-bold py-3 px-4 rounded transition-all duration-300 transform active:scale-[0.99] tracking-widest text-xs uppercase ${isProcessing ? 'bg-[#1e293b] text-[#64748b] cursor-not-allowed' : 'bg-gradient-to-r from-[#06b6d4] via-[#38bdf8] to-[#06b6d4] bg-[length:200%_auto] hover:bg-right shadow-[0_0_15px_rgba(6,182,212,0.25)] hover:shadow-[0_0_25px_rgba(6,182,212,0.45)]'}`}>
+            
               {isProcessing ? "🔄 COMPUTING TEST-TIME SEARCH BUDGET..." : "⚡ EXECUTE TO-MoE DISPATCH NETWORK"}
             </button>
           </div>
