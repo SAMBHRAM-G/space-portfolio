@@ -160,7 +160,6 @@ export default function MissionControlHUD() {
           <div className="bg-[#0b0f19]/80 border border-[#1e293b] p-5 rounded text-center">
             <div className="text-xs text-[#64748b] uppercase tracking-widest mb-1">Frontend Container Node</div>
             <div className="text-sm font-bold text-[#06b6d4]">`space-3d-frontend`</div>
-// After line 162, add:
             <div className="text-sm font-bold text-[#06b6d4]">`space-3d-frontend`</div>
           </div>
           
