@@ -121,7 +121,7 @@ export default function MissionControlHUD() {
               onClick={triggerNeuralInference}
               disabled={isProcessing}
               className={`w-full text-[#020617] font-bold py-3 px-4 rounded transition-all duration-300 transform active:scale-[0.99] tracking-widest text-xs uppercase ${isProcessing ? 'bg-[#1e293b] text-[#64748b] cursor-not-allowed' : 'bg-gradient-to-r from-[#06b6d4] via-[#38bdf8] to-[#06b6d4] bg-[length:200%_auto] hover:bg-right shadow-[0_0_15px_rgba(6,182,212,0.25)] hover:shadow-[0_0_25px_rgba(6,182,212,0.45)]'}`}>
-            
+            >
               {isProcessing ? "🔄 COMPUTING TEST-TIME SEARCH BUDGET..." : "⚡ EXECUTE TO-MoE DISPATCH NETWORK"}
             </button>
           </div>
