@@ -113,7 +113,7 @@ export default function MissionControlHUD() {
                 className="w-full h-44 bg-[#020617] border border-[#1e293b] rounded p-3 text-xs text-[#38bdf8] focus:outline-none focus:border-[#06b6d4] focus:shadow-[0_0_15px_rgba(6,182,212,0.15)] font-mono leading-relaxed transition-all duration-300"
                 value={ingressData}
                 onChange={(e) => setIngressData(e.target.value)}
-              
+              ></textarea>
             </div>
             
             {/* Primary Action Input Controller with Glowing Micro-Interactions */}
