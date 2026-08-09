@@ -1,0 +1,35 @@
+zerops:
+  # COMPONENT 1: The Core Node.js Compute Backend
+  - setup: moe-backend
+    run:
+      backend:
+        runtime: nodejs-20
+        build:
+          base: nodejs-20
+          buildCommands:
+            - cd backend && npm install
+          deployFiles:
+            - backend/server.js
+            - backend/package.json
+            - backend/node_modules
+        run:
+          start: node backend/server.js
+
+  # COMPONENT 2: The Premium 3D Next.js Frontend UI Template
+  - setup: space-3d-frontend
+    run:
+      backend:
+        runtime: nodejs-20
+        build:
+          base: nodejs-20
+          buildCommands:
+            - npm install --legacy-peer-deps
+            - npm run build
+          deployFiles:
+            - .next
+            - public
+            - package.json
+            - node_modules
+        run:
+          start: npm run start
+
