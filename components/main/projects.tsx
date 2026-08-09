@@ -152,16 +152,7 @@ export default function MissionControlHUD() {
           <div className="text-[#64748b] mb-1">`[CLUSTER_MESH] Establishing safe communication bridges on Port 3000...`</div>
           <div className="text-[#10b981] mb-1">`[TELEMETRY] Listening for incoming structural emergency stream ingress frames...`</div>
           {executionState && <div className="text-[#ef4444] mt-2 animate-pulse">`[ALARM] Complexity layer vector spiked to critical threshold: {executionState.c_t}.00`</div>}
-        </div>
-      )}
-
-      {activeTab === 'network_status' && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 flex-grow items-center justify-center backdrop-blur-sm">
-          <div className="bg-[#0b0f19]/80 border border-[#1e293b] p-5 rounded text-center">
-            <div className="text-xs text-[#64748b] uppercase tracking-widest mb-1">Frontend Container Node</div>
-            <div className="text-sm font-bold text-[#06b6d4]">`space-3d-frontend`</div>
-            <div className="text-sm font-bold text-[#06b6d4]">`space-3d-frontend`</div>
-          </div>
+           </div>
           
           <div className="bg-[#0b0f19]/80 border border-[#1e293b] p-5 rounded text-center">
             <div className="text-xs text-[#64748b] uppercase tracking-widest mb-1">Backend Cluster Node</div>
