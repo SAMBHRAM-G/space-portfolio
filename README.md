@@ -54,6 +54,9 @@ space-portfolio/
     |-- icon2.png
     |-- layout.tsx
     |-- page.tsx
+  |- backend/
+    |-- package.json
+    |-- server.js
   |- components/
     |-- main/
     |-- sub/
@@ -75,6 +78,7 @@ space-portfolio/
   |- postcss.config.js
   |- tailwind.config.ts
   |- tsconfig.json
+  |- zerops.yml
 ```
 <!--- FOLDER_STRUCTURE_END --->
 
