@@ -1,5 +1,5 @@
 zerops:
-  - setup: static1
+  - setup: static
     build:
       base: nodejs@20
       buildCommands:
